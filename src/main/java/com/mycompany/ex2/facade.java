@@ -17,7 +17,7 @@ import javax.persistence.Query;
  * @author felesiah
  */
 public class facade {
-     EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.mycompany_Ex1_jar_1.0-SNAPSHOTPU");
+     EntityManagerFactory emf = Persistence.createEntityManagerFactory("com.mycompany_Ex2_jar_1.0-SNAPSHOTPU");
         EntityManager em = emf.createEntityManager();
         
     
