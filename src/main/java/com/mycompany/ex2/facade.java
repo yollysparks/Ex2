@@ -31,7 +31,7 @@ public class facade {
  }
      public List<Student> getAllAnders(){
        Query q = em.createNamedQuery("Customer.findByName");
-         q.setParameter("name","Anders");
+         q.setParameter("firstName","Anders");
          List<Student> cust = (List<Student>)q.getResultList();  
          System.out.println(cust);
       
@@ -51,6 +51,14 @@ public class facade {
             em.close();
            
     }
-  
+  }
+  public List<Student> getAllAnd(){
+       Query q = em.createNamedQuery("Customer.findByName");
+         q.setParameter("lastName","Anders");
+         List<Student> cust = (List<Student>)q.getResultList();  
+         System.out.println(cust);
+      
+    return cust;
+     } 
 }
-}
+
